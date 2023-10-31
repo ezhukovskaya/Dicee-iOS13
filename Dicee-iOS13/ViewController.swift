@@ -28,11 +28,9 @@ class ViewController: UIViewController {
         let diceImagesArray = [diceOneImage, diceTwoImage, diceThreeImage, diceFourImage, diceFiveImage, diceSixImage]
         
         let arrayCount = diceImagesArray.count;
-        let randomNumberForImage1 = Int.random(in: 1..<arrayCount)
-        let randomNumberForImage2 = Int.random(in: 1..<arrayCount)
         
-        diceViewImage1.image = diceImagesArray[randomNumberForImage1]
-        diceViewImage2.image = diceImagesArray[randomNumberForImage2]
+        diceViewImage1.image = diceImagesArray[Int.random(in: 1..<arrayCount)]
+        diceViewImage2.image = diceImagesArray[Int.random(in: 1..<arrayCount)]
     }
 }
 
